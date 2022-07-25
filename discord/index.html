@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+</head>
+
+<body class="absolute flex align-stretch w-full h-full">
+  <div class="flex flex-col bg-gray-600 z-30 shadow">
+    <div class="mx-2 my-1 mt-2">
+      <button
+        class="flex justify-center items-center w-12 h-12 text-white bg-blue-400 rounded-full overflow-hidden cursor-pointer active:translate-y-0.5">
+        <i class="fa-solid fa-wind"></i>
+      </button>
+    </div>
+    <hr class="mx-4 my-2 border-2">
+    <div class="mx-2 my-1">
+      <button
+        class="flex justify-center items-center w-12 h-12 bg-blue-200 rounded-lg overflow-hidden cursor-pointer active:translate-y-0.5">
+        <img class="w-full h-full object-cover" src="https://loremflickr.com/48/48" alt="">
+      </button>
+    </div>
+    <div class="mx-2 my-1">
+      <div
+        class="flex justify-center items-center w-12 h-12 bg-blue-200 rounded-full overflow-hidden cursor-pointer active:translate-y-0.5">
+        <img class="w-full h-full object-cover" src="https://loremflickr.com/48/48" alt="">
+        </button>
+      </div>
+    </div>
+    <div class="mx-2 my-1">
+      <button
+        class="flex justify-center items-center w-12 h-12 bg-blue-200 rounded-full overflow-hidden cursor-pointer active:translate-y-0.5">
+        <img class="m-none w-full h-full object-cover" src="https://loremflickr.com/48/48" alt="">
+      </button>
+    </div>
+  </div>
+  <div class="flex flex-none flex-col w-52 text-white bg-gray-500 z-20 shadow">
+    <div
+      class="flex items-center p-3 h-14 bg-gray-500 border-b border-gray-400 font-bold cursor-pointer hover:bg-gray-400 transition-colors">
+      <div class="truncate flex-1">
+        サーバー名
+      </div>
+      <div class="p-1">
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+    </div>
+    <div class="flex-1 overscroll-auto py-2 font-medium">
+      <div class="mx-2 my-1 p-1 rounded hover:bg-gray-400 transition-colors cursor-pointer">
+        <i class="fa-solid fa-hashtag text-gray-300"></i> テキストチャンネル1
+      </div>
+      <div class="mx-2 my-1 p-1 rounded hover:bg-gray-400 transition-colors cursor-pointer">
+        <i class="fa-solid fa-hashtag text-gray-300"></i> テキストチャンネル2
+      </div>
+    </div>
+  </div>
+  <div class="flex-1 flex flex-col bg-gray-600 align-stretch">
+    <div class="flex items-center px-3 h-14 font-medium text-white bg-gray-500 shadow z-10">
+      <div>
+        <i class="fa-solid fa-hashtag text-gray-300"></i> テキストチャンネル
+      </div>
+    </div>
+    <div class="flex flex-1 align-stretch">
+      <div class="relative flex-1 text-white">
+        <div class="mx-4 my-6 flex">
+          <div>
+            <button
+              class="flex justify-center items-center w-12 h-12 bg-blue-200 rounded-full overflow-hidden cursor-pointer active:translate-y-0.5">
+              <img class="m-none w-full h-full object-cover" src="https://loremflickr.com/48/48" alt="">
+            </button>
+          </div>
+          <div class="ml-3">
+            <div>
+              <span class="font-medium">発言者</span>
+              <span class="text-xs text-gray-300">時刻 00:00</span>
+            </div>
+            <div>
+              あいうえお
+            </div>
+          </div>
+        </div>
+        <div class="mx-4 my-6 flex">
+          <div>
+            <button
+              class="flex justify-center items-center w-12 h-12 bg-blue-200 rounded-full overflow-hidden cursor-pointer active:translate-y-0.5">
+              <img class="m-none w-full h-full object-cover" src="https://loremflickr.com/48/48" alt="">
+            </button>
+          </div>
+          <div class="ml-3">
+            <div>
+              <span class="font-medium">発言者</span>
+              <span class="text-xs text-gray-300">時刻 00:00</span>
+            </div>
+            <div>
+              かきくけこ
+            </div>
+          </div>
+        </div>
+        <div class="absolute flex overflow-hidden bottom-0 left-0 right-0 m-3 pr-2 h-12 rounded bg-gray-500">
+          <button class="w-12 h-full">
+            <i class="text-lg fa-solid fa-circle-plus"></i>
+          </button>
+          <input type="text" class="flex-1 h-full bg-transparent">
+          <button class="px-1.5 h-full">
+            <i class="text-lg fa-solid fa-gift"></i>
+          </button>
+          <button class="px-1.5 h-full">
+            <i class="text-lg fa-solid fa-heart"></i>
+          </button>
+        </div>
+      </div>
+      <div class="w-48 text-white bg-gray-500">
+        <div class="m-4 flex items-center">
+          <div>
+            <button
+              class="flex justify-center items-center w-10 h-10 bg-blue-200 rounded-full overflow-hidden cursor-pointer active:translate-y-0.5">
+              <img class="m-none w-full h-full object-cover" src="https://loremflickr.com/48/48" alt="">
+            </button>
+          </div>
+          <div class="ml-2">
+            <span class="font-medium">ユーザー</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
